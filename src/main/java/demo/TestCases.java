@@ -24,10 +24,11 @@ public class TestCases {
     }
 
     
-    public  void testCase01(){
+    public  void testCase01() throws InterruptedException{
         System.out.println("Start Test case: testCase01");
         driver.get("https://www.google.com");
-        System.out.println("end Test case: testCase02");
+        Thread.sleep(3000);
+        System.out.println("end Test case: testCase01");
     }
 
 

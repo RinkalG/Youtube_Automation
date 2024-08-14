@@ -27,8 +27,24 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation 'org.seleniumhq.selenium:selenium-java:4.14.0'
+    
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation group: 'org.testng', name: 'testng', version: '7.9.0'
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.5'
+
+
 
 }
+// test {
+//     useTestNG(){
+//         suites 'src\test\resources\testng.xml'
+//     }
+//     testLogging {
+//         showStandardStreams = true
+//         events 'passed', 'failed','skipped'
+//     }
+// }
 
 //task startScript(type:Exec) {
 //    commandLine './selenium-run.sh'
